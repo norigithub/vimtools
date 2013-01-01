@@ -1,8 +1,12 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if has("win32") || has("win64")
+    set rtp+=~/vimfiles/bundle/vundle 
+    call vundle#rc('~/vimfiles/bundle')
+else
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 

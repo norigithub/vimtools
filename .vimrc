@@ -7,6 +7,7 @@ if has("win32") || has("win64")
 else
     set rtp+=~/.vim/bundle/vundle/
     call vundle#rc()
+endif
 
 " let Vundle manage Vundle
 " required! 

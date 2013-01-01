@@ -3,6 +3,7 @@ filetype off                   " required!
 
 if has("win32") || has("win64")
     set rtp+=~/vimfiles/bundle/vundle 
+    set shellcmdflag=/c
     call vundle#rc('~/vimfiles/bundle')
 else
     set rtp+=~/.vim/bundle/vundle/

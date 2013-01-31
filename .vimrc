@@ -48,9 +48,6 @@ set viminfo+=h
 "新規ファイル作成時のテンプレート指定\
 ""html5
 autocmd BufNewFile *.html 0r ~/.vim/templates/html5.html
-""python
-autocmd BufNewFile *.py 0r ~/.vim/templates/python.py
-autocmd BufNewFile *.wsgi 0r ~/.vim/templates/python.py
 
 "読み込み時のエンコード順番
 set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp

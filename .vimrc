@@ -62,6 +62,7 @@ set shiftwidth=4
 
 
 "Color Scheme
+set t_Co=256
 syntax on
 colorscheme molokai
 

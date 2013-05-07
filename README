@@ -1,3 +1,7 @@
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+LASSES_ROOT\Applications\gvim.exe\shell\edit\command
 cp vim/.vimrc ~/
 vim +BundleInstall +qall
+
+Windows Tips:
+    Adding open in new tab setting to registory:
+        HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\edit\command "D:\program\Vim\vim73\gvim.exe" -p --remote-tab-silent "%1"

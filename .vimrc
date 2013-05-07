@@ -4,6 +4,8 @@ filetype off                   " required!
 if has("win32") || has("win64")
     set rtp+=~/vimfiles/bundle/vundle 
     call vundle#rc('~/vimfiles/bundle')
+    nnoremap <C-Tab>   gt
+    nnoremap <C-S-Tab> gT
 else
     set rtp+=~/.vim/bundle/vundle/
     call vundle#rc()

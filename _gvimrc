@@ -12,3 +12,14 @@ if has("multi_lang")
 language C
 endif
 
+"IM Contorol Settings
+if has('win32') || has('win64')
+  " Windowsの場合
+    inoremap <silent> <C-j> <C-^><C-r>=IMState('FixMode')<CR>
+elseif has('unix')
+  " Unixの場合    
+    let IM_CtrlMode = 1
+    inoremap <silent> <C-j> <C-r>=IMState('FixMode')<CR>
+endif
+
+

@@ -1,6 +1,6 @@
-LASSES_ROOT\Applications\gvim.exe\shell\edit\command
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cp vim/.vimrc ~/
-vim +BundleInstall +qall
+:BundleInstall
 
 Windows Tips:
     Adding open in new tab setting to registory:

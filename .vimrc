@@ -18,7 +18,8 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tomasr/molokai'
+"Bundle 'tomasr/molokai'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
@@ -66,7 +67,9 @@ set shiftwidth=4
 "Color Scheme
 set t_Co=256
 syntax on
-colorscheme molokai
+"colorscheme molokai
+colorscheme solarized
+set background=dark
 
 "Toggle NERDTree
 noremap <F2> :NERDTreeToggle<CR>"

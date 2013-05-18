@@ -5,3 +5,6 @@ cp vim/.vimrc ~/
 Windows Tips:
     Adding open in new tab setting to registory:
         HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\edit\command "D:\program\Vim\vim73\gvim.exe" -p --remote-tab-silent "%1"
+
+About .dir_colors file:
+Ubuntu use .dircolors not .dir_colors, so you need to rename it or edit .bashrc.

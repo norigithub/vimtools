@@ -1,4 +1,4 @@
-set guifont=Inconsolata\ 14
+set guifont=Inconsolata:h14
 set encoding=utf-8
 
 

@@ -49,8 +49,8 @@ set hlsearch
 set viminfo+=h
 
 "新規ファイル作成時のテンプレート指定\
-""html5
-autocmd BufNewFile *.html 0r ~/.vim/templates/html5.html
+""html
+autocmd BufNewFile *.html 0r ~/.vim/template/skelton.html
 
 "読み込み時のエンコード順番
 set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp

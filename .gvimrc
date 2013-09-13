@@ -1,4 +1,5 @@
 set guifont=Inconsolata:h14
+set guifontwide=MS_Gothic:h14
 set encoding=utf-8
 
 

@@ -1,3 +1,4 @@
+""Vundle setting
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -19,13 +20,13 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'tomasr/molokai'
-"Bundle 'altercation/vim-colors-solarized'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'fuenor/im_control.vim'
 
 filetype plugin indent on     " required!
+""End Vundle setting
 
 "mapleader
 let mapleader=","
@@ -71,7 +72,6 @@ set shiftwidth=4
 set t_Co=256
 syntax on
 colorscheme molokai
-"colorscheme solarized
 set background=dark
 
 "Toggle NERDTree

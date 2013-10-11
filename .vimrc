@@ -27,6 +27,9 @@ Bundle 'fuenor/im_control.vim'
 
 filetype plugin indent on     " required!
 
+"mapleader
+let mapleader=","
+
 "行番号の表示
 set number
 

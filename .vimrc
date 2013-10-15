@@ -23,7 +23,6 @@ Bundle 'tomasr/molokai'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'fuenor/im_control.vim'
 
 filetype plugin indent on     " required!
 ""End Vundle setting

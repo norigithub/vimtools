@@ -2,6 +2,9 @@ set guifont=Inconsolata:h14
 set guifontwide=MS_Gothic:h14
 set encoding=utf-8
 
+"IME制御
+set iminsert=0
+set imsearch=-1
 
 if has('win32') || has('win64')
   " Windowsの場合

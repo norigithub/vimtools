@@ -93,3 +93,4 @@ let g:indent_guides_color_change_percent = 10
 let g:indent_guides_auto_colors = 0
 ""Change odd Odd and Even line color
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=8
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8

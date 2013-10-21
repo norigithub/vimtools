@@ -68,16 +68,19 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-
 "Color Scheme
 set t_Co=256
 syntax on
 colorscheme molokai
 set background=dark
 
+":nohをエスケープに割り当て
+nnoremap <silent> <ESC> <ESC>:noh<CR>
+
 "Toggle NERDTree
 noremap <F2> :NERDTreeToggle<CR>"
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
+
 
 "vim-indent-guides
 ""Use this option to control whether the plugin is enabled on Vim startup.

@@ -1,5 +1,3 @@
-""Vundle setting
-set nocompatible               " be iMproved
 filetype off                   " required!
 
 if has("win32") || has("win64")
@@ -75,7 +73,7 @@ colorscheme molokai
 set background=dark
 
 ":nohをエスケープに割り当て
-nnoremap <silent> <ESC> <ESC>:noh<CR>
+nnoremap <silent> <Leader><Space> :noh<CR>
 
 "Toggle NERDTree
 noremap <F2> :NERDTreeToggle<CR>"

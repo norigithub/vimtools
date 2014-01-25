@@ -72,7 +72,7 @@ syntax on
 colorscheme molokai
 set background=dark
 
-":nohをエスケープに割り当て
+":nohをスペースに割り当て
 nnoremap <silent> <Leader><Space> :noh<CR>
 
 "Toggle NERDTree

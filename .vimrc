@@ -72,15 +72,11 @@ syntax on
 colorscheme molokai
 set background=dark
 
-":nohをスペースに割り当て
-noremap <silent> <Leader><Space> :noh<CR>
+":nohにESC*2割り当て
+noremap <silent> <ESC><ESC> :noh<CR>
 
 "Toggle NERDTree
 noremap <F2> :NERDTreeToggle<CR>"
-
-"Toggle IndentGuid
-noremap <silent> <Leader>ig <Plug>IndentGuidesToggle
-
 
 "vim-indent-guides
 ""Use this option to control whether the plugin is enabled on Vim startup.
@@ -94,6 +90,6 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_color_change_percent = 10
 ""Use this option to control whether or not the plugin automatically calculates the highlight colors.
 let g:indent_guides_auto_colors = 0
-""Change odd Odd and Even line color
+            ""Change odd Odd and Even line color
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=8
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8

@@ -78,7 +78,7 @@ noremap <silent> <ESC><ESC> :noh<CR>
 "Toggle NERDTree
 noremap <F2> :NERDTreeToggle<CR>"
 
-"vim-indent-guides
+""vim-indent-guides
 ""Use this option to control whether the plugin is enabled on Vim startup.
 let g:indent_guides_enable_on_vim_startup = 1
 ""Use this option to customize the size of the indent guide
@@ -90,6 +90,6 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_color_change_percent = 10
 ""Use this option to control whether or not the plugin automatically calculates the highlight colors.
 let g:indent_guides_auto_colors = 0
-            ""Change odd Odd and Even line color
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=8
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
+"            ""Change odd Odd and Even line color
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=8 ctermbg=8
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=8 ctermbg=8

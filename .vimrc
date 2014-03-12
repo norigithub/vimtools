@@ -73,11 +73,13 @@ colorscheme molokai
 set background=dark
 
 ":nohをスペースに割り当て
-nnoremap <silent> <Leader><Space> :noh<CR>
+noremap <silent> <Leader><Space> :noh<CR>
 
 "Toggle NERDTree
 noremap <F2> :NERDTreeToggle<CR>"
-nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
+
+"Toggle IndentGuid
+noremap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
 
 "vim-indent-guides

@@ -67,10 +67,16 @@ set softtabstop=4
 set shiftwidth=4
 
 "Color Scheme
-set t_Co=256
-syntax on
-colorscheme molokai
-set background=dark
+function SetStyle()
+    set t_Co=256
+    syntax on
+    colorscheme molokai
+    set background=dark
+endfunction
+
+if !(has("win32") || has("win64"))
+    call SetStyle()
+endif
 
 ":nohにESC*2割り当て
 noremap <silent> <ESC><ESC> :noh<CR>
@@ -87,8 +93,9 @@ let g:indent_guides_guide_size=1
 let g:indent_guides_start_level = 2
 ""Use this option to control the percent at which the highlight colors will be lightened or darkened.
 ""(not work on terminal?)
-"let g:indent_guides_color_change_percent = 60
+let g:indent_guides_color_change_percent = 60
 ""Use this option to control whether or not the plugin automatically calculates the highlight colors.
 let g:indent_guides_auto_colors = 0
+"            ""Change odd Odd and Even line color
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#2C3336 ctermbg=8
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2C3336 ctermbg=8

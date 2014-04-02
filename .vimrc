@@ -71,7 +71,6 @@ function SetStyle()
     set t_Co=256
     syntax on
     colorscheme molokai
-    set background=dark
 endfunction
 
 if !(has("win32") || has("win64"))

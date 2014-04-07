@@ -66,16 +66,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-"Color Scheme
-function SetStyle()
-    set t_Co=256
-    syntax on
-    colorscheme molokai
-endfunction
-
-if !(has("win32") || has("win64"))
-    call SetStyle()
-endif
 
 ":nohにESC*2割り当て
 noremap <silent> <ESC><ESC> :noh<CR>
@@ -84,17 +74,32 @@ noremap <silent> <ESC><ESC> :noh<CR>
 noremap <F2> :NERDTreeToggle<CR>"
 
 ""vim-indent-guides
-""Use this option to control whether the plugin is enabled on Vim startup.
-let g:indent_guides_enable_on_vim_startup = 1
-""Use this option to customize the size of the indent guide
-let g:indent_guides_guide_size=1
-""Use this option to control which indent level to start showing guides from.
-let g:indent_guides_start_level = 2
-""Use this option to control the percent at which the highlight colors will be lightened or darkened.
-""(not work on terminal?)
-let g:indent_guides_color_change_percent = 60
-""Use this option to control whether or not the plugin automatically calculates the highlight colors.
-let g:indent_guides_auto_colors = 0
-"            ""Change odd Odd and Even line color
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#2C3336 ctermbg=8
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2C3336 ctermbg=8
+function SetIndentGuide()
+    ""Use this option to control whether the plugin is enabled on Vim startup.
+    let g:indent_guides_enable_on_vim_startup = 1
+    ""Use this option to customize the size of the indent guide
+    let g:indent_guides_guide_size=1
+    ""Use this option to control which indent level to start showing guides from.
+    let g:indent_guides_start_level = 2
+    ""Use this option to control the percent at which the highlight colors will be lightened or darkened.
+    ""(not work on terminal?)
+    let g:indent_guides_color_change_percent = 60
+    ""Use this option to control whether or not the plugin automatically calculates the highlight colors.
+    let g:indent_guides_auto_colors = 0
+    "            ""Change odd Odd and Even line color
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#2C3336 ctermbg=8
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2C3336 ctermbg=8
+endfunction
+
+"Color Scheme
+function SetStyle()
+    set t_Co=256
+    syntax on
+    colorscheme molokai
+endfunction
+
+"コマンドプロンプトではcolorscheme、IndentGuideを適用しない。
+if !(has("win32") || has("win64"))
+    call SetStyle()
+    call SetIndentGuide()
+endif

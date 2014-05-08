@@ -7,3 +7,5 @@ fi
 cp .vimrc ~/
 cp -r template ~/.vim
 vim +BundleInstall +qall
+
+cp .dircolors ~/

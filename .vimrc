@@ -70,8 +70,15 @@ set shiftwidth=4
 ":nohにESC*2割り当て
 noremap <silent> <ESC><ESC> :noh<CR>
 
+
+"Run script on python2
+noremap <F2> :pyfile %<CR>"
+
+"Run script on python3
+noremap <F3> :py3file %<CR>"
+
 "Toggle NERDTree
-noremap <F2> :NERDTreeToggle<CR>"
+noremap <F4> :NERDTreeToggle<CR>"
 
 ""vim-indent-guides
 function SetIndentGuide()

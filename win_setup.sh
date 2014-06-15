@@ -7,4 +7,5 @@ fi
 cp .vimrc ~/.vimrc
 cp .gvimrc ~/.gvimrc
 cp -r template ~/vimfiles
-vim +BundleInstall +qall
+
+#Run vim and :BundleInstall

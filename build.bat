@@ -5,7 +5,7 @@ call "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\vcvar
 
 ::Define variables.
 set PREFIX=D:\Program\Vim\vim74
-set SDK_INCLUDE_DIR=C:\Program Files\Microsoft SDKs\Windows\v7.1A\Include
+set SDK_INCLUDE_DIR=C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include
 set WINVER=0x0500
 set CPU=AMD64
 set MBYTE=yes

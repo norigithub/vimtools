@@ -1,5 +1,5 @@
-set guifont=Inconsolata:h14
-set guifontwide=MS_Gothic:h14
+set guifont=Ricty_Diminished:h14
+
 set encoding=utf-8
 call SetStyle()
 

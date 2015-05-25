@@ -1,29 +1,35 @@
-filetype off                   " required!
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-if has("win32") || has("win64")
-    set rtp+=~/vimfiles/bundle/vundle 
-    call vundle#rc('~/vimfiles/bundle')
-    nnoremap <C-Tab>   gt
-    nnoremap <C-S-Tab> gT
-else
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-endif
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-" My Bundles here:
+Plugin 'tomasr/molokai'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
-" original repos on github
-Bundle 'tomasr/molokai'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-
-filetype plugin indent on     " required!
-""End Vundle setting
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 "mapleader
 let mapleader=","

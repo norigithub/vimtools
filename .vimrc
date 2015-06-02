@@ -21,6 +21,8 @@ Plugin 'tomasr/molokai'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'morhetz/gruvbox'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -115,7 +117,7 @@ endfunction
 function SetStyle()
     set t_Co=256
     syntax on
-    colorscheme molokai
+    colorscheme gruvbox
 endfunction
 
 "コマンドプロンプトではcolorscheme、IndentGuideを適用しない。

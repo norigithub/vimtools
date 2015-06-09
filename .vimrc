@@ -17,11 +17,11 @@ endif
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'tomasr/molokai'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'morhetz/gruvbox'
+Plugin 'norigithub/jedi-vim'
 
 
 " All of your Plugins must be added before the following line
@@ -118,3 +118,4 @@ if !(has("win32") || has("win64"))
     call SetStyle()
     call SetIndentGuide()
 endif
+let g:jedi#force_py_version = 3

@@ -11,6 +11,7 @@ set CPU=AMD64
 set MBYTE=yes
 set IME=yes
 set GIME=yes
+set CSCOPE=yes
 set DEBUG=no
 set PYTHON=D:\Program\Python27
 set DYNAMIC_PYTHON=yes
@@ -20,7 +21,7 @@ set DYNAMIC_PYTHON3=yes
 set PYTHON3_VER=34
 
 ::Make Vim.
-call nmake -f Make_mvc.mak distclean
+call nmake -f Make_mvc.mak clean
 call nmake -f Make_mvc.mak
 
 ::Copy binary.
@@ -34,6 +35,7 @@ call nmake -f Make_mvc.mak
 ::Copy binaries.
 copy /Y gvim.exe %PREFIX%
 copy /Y vimrun.exe %PREFIX%
+copy /Y xxd\xxd.exe %PREFIX%
 
 ::Copy dll.
 copy /Y GvimExt\gvimext.dll %PREFIX%

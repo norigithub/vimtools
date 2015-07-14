@@ -19,7 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'norigithub/nerdcommenter'
 Plugin 'morhetz/gruvbox'
 Plugin 'norigithub/jedi-vim'
 

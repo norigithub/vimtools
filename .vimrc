@@ -23,6 +23,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'morhetz/gruvbox'
 Plugin 'norigithub/jedi-vim'
 
+Plugin 'scrooloose/syntastic'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -76,7 +78,7 @@ set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp
 "タブをスペース4に変換
 set expandtab
 set autoindent
-set smartindent
+"set smartindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -109,7 +111,6 @@ endfunction
 function SetStyle()
     set t_Co=256
     syntax on
-    set background=dark
     colorscheme gruvbox
 endfunction
 
@@ -119,3 +120,22 @@ if !(has("win32") || has("win64"))
     call SetIndentGuide()
 endif
 let g:jedi#force_py_version = 3
+
+"Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+if !(has("win32") || has("win64"))
+    let g:syntastic_python_flake8_exec = '/opt/python3/bin/pyflakes'
+    let g:syntastic_python_pep8_exec = '/opt/python3/bin/pep8'
+else
+    let g:syntastic_python_flake8_exec = 'D:\Program\Python34\Scripts\pyflakes.exe'
+    let g:syntastic_python_pep8_exec = 'D:\Program\Python34\Scripts\pep8.exe'
+endif
+let g:syntastic_python_pep8_args = "--ignore=E501"
+let g:syntastic_python_checkers = ['flake8', 'pep8']

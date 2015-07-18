@@ -120,6 +120,15 @@ if !(has("win32") || has("win64"))
     call SetStyle()
     call SetIndentGuide()
 endif
+
+"Add Python3 environment variable
+if !(has("win32") || has("win64"))
+    let $PATH .= ':/opt/python3/bin'
+else
+    let $PATH .= ';D:\program\Python34;D:\program\Python34\Scripts'
+endif
+
+"jedi-vim
 let g:jedi#force_py_version = 3
 
 "Syntastic
@@ -131,11 +140,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-if !(has("win32") || has("win64"))
-    let g:syntastic_python_flake8_exec = '/opt/python3/bin/pyflakes'
-    let g:syntastic_python_pep8_exec = '/opt/python3/bin/pep8'
-else
-    let $PATH .= ';D:\program\Python34;D:\program\Python34\Scripts'
-endif
+
 let g:syntastic_python_pep8_args = "--ignore=E501"
 let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+

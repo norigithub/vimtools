@@ -134,8 +134,7 @@ if !(has("win32") || has("win64"))
     let g:syntastic_python_flake8_exec = '/opt/python3/bin/pyflakes'
     let g:syntastic_python_pep8_exec = '/opt/python3/bin/pep8'
 else
-    let g:syntastic_python_flake8_exec = 'D:\Program\Python34\Scripts\pyflakes.exe'
-    let g:syntastic_python_pep8_exec = 'D:\Program\Python34\Scripts\pep8.exe'
+    let $PATH .= ';D:\program\Python34;D:\program\Python34\Scripts'
 endif
 let g:syntastic_python_pep8_args = "--ignore=E501"
-let g:syntastic_python_checkers = ['flake8', 'pep8']
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']

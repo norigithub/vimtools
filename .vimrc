@@ -21,9 +21,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdtree'
 Plugin 'norigithub/nerdcommenter'
 Plugin 'morhetz/gruvbox'
-Plugin 'norigithub/jedi-vim'
-
-Plugin 'scrooloose/syntastic'
+"Plugin 'norigithub/jedi-vim'
+"Plugin 'scrooloose/syntastic'
 
 
 " All of your Plugins must be added before the following line
@@ -129,18 +128,18 @@ else
 endif
 
 "jedi-vim
-let g:jedi#force_py_version = 3
+"let g:jedi#force_py_version = 3
 
 "Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
-let g:syntastic_python_pep8_args = "--ignore=E501"
-let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+"let g:syntastic_python_pep8_args = "--ignore=E501"
+"let g:syntastic_python_checkers = ['pyflakes', 'pep8']
 

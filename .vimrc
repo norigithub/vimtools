@@ -21,7 +21,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdtree'
 Plugin 'norigithub/nerdcommenter'
 Plugin 'morhetz/gruvbox'
-"Plugin 'norigithub/jedi-vim'
+Plugin 'davidhalter/jedi-vim'
 "Plugin 'scrooloose/syntastic'
 
 

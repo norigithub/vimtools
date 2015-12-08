@@ -120,15 +120,7 @@ if !(has("win32") || has("win64"))
     call SetIndentGuide()
 endif
 
-"Add Python3 environment variable
-if !(has("win32") || has("win64"))
-    let $PATH .= ':/opt/python3/bin'
-else
-    let $PATH .= ';D:\program\Python34;D:\program\Python34\Scripts'
-endif
 
-"jedi-vim
-"let g:jedi#force_py_version = 3
 
 "Syntastic
 "set statusline+=%#warningmsg#

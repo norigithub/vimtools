@@ -20,9 +20,9 @@ set DYNAMIC_PYTHON3=yes
 set PYTHON3_VER=35
 
 call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=no clean
-call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=yes clean
-
 call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=no
+
+call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=yes clean
 call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=yes
 
 ::Copy binaries.

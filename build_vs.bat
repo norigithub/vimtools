@@ -22,8 +22,8 @@ set PYTHON3_VER=35
 nmake -f Make_mvc.mak  GUI=no clean
 nmake -f Make_mvc.mak  GUI=no
 
-nmake -f Make_mvc.mak  GUI=yes
 nmake -f Make_mvc.mak  GUI=yes clean
+nmake -f Make_mvc.mak  GUI=yes
 
 ::Copy binaries.
 copy /Y vim.exe %PREFIX%

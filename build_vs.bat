@@ -4,7 +4,7 @@ SET Include=%Include%;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Includ
 
 
 ::Define variables.
-set PREFIX=D:\Program\Vim\vim74
+set PREFIX=D:\Program\Vim\vim8
 set CPU=AMD64
 set MBYTE=yes
 set IME=yes

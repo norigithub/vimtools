@@ -3,7 +3,7 @@
 ::Set up compile environment.
 
 ::Define variables.
-set PREFIX=D:\Program\Vim\vim74
+set PREFIX=D:\Program\Vim\vim8
 echo off
 set PATH=D:\program\mingw-w64\x86_64-5.1.0-win32-seh-rt_v4-rev0\mingw64\bin;%PATH%
 set MBYTE=yes

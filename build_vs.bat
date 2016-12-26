@@ -1,11 +1,11 @@
-::Install gVim with Self-installing executable   gvim##.exe, Before execute this bat file. 
-::This bat will do only update binaries and runtimes vimorig.  
-::Set up compile environment.
+call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
+::call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\vcvars32.bat"
+SET Include=%Include%;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include
+
 
 ::Define variables.
 set PREFIX=D:\Program\Vim\vim8
-echo off
-set PATH=D:\program\mingw-w64\x86_64-5.1.0-win32-seh-rt_v4-rev0\mingw64\bin;%PATH%
+set CPU=AMD64
 set MBYTE=yes
 set IME=yes
 set GIME=yes
@@ -19,11 +19,11 @@ set PYTHON3=D:\Program\Python35
 set DYNAMIC_PYTHON3=yes
 set PYTHON3_VER=35
 
-call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=no clean
-call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=no
+nmake -f Make_mvc.mak  GUI=no clean
+nmake -f Make_mvc.mak  GUI=no
 
-call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=yes clean
-call mingw32-make -f Make_ming.mak ARCH=x86-64 GUI=yes
+nmake -f Make_mvc.mak  GUI=yes clean
+nmake -f Make_mvc.mak  GUI=yes
 
 ::Copy binaries.
 copy /Y vim.exe %PREFIX%

@@ -1,5 +1,4 @@
 call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
-::call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\vcvars32.bat"
 SET Include=%Include%;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include
 
 
@@ -12,13 +11,10 @@ set GIME=yes
 set ICONV=yes
 set CSCOPE=yes
 set DEBUG=no
-set PYTHON=D:\Program\Python27
-set DYNAMIC_PYTHON=yes
-set PYTHON_VER=27
-set PYTHON3=D:\Program\Python35
+set PYTHON3=C:\Users\Nori\AppData\Local\Programs\Python\Python36
 set DYNAMIC_PYTHON3=yes
-set PYTHON3_VER=35
-
+set PYTHON3_VER=36
+set DIRECTX=yes
 nmake -f Make_mvc.mak  GUI=no clean
 nmake -f Make_mvc.mak  GUI=no
 

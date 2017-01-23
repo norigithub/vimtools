@@ -3,7 +3,7 @@ SET Include=%Include%;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Includ
 
 
 ::Define variables.
-set PREFIX=D:\Program\Vim\vim8
+set PREFIX=D:\Program\Vim\vim80
 set CPU=AMD64
 set MBYTE=yes
 set IME=yes
@@ -22,9 +22,7 @@ nmake -f Make_mvc.mak  GUI=yes clean
 nmake -f Make_mvc.mak  GUI=yes
 
 ::Copy binaries.
-copy /Y vim.exe %PREFIX%
-copy /Y gvim.exe %PREFIX%
-copy /Y vimrun.exe %PREFIX%
+copy /Y *.exe %PREFIX%
 copy /Y xxd\xxd.exe %PREFIX%
 
 ::Copy dll.

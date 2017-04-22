@@ -18,7 +18,7 @@ endif
 Plugin 'gmarik/Vundle.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdtree'
-Plugin 'norigithub/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'morhetz/gruvbox'
 "Plugin 'scrooloose/syntastic'
 

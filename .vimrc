@@ -67,9 +67,7 @@ set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp
 
 "タブをスペース4に変換
 set expandtab
-set autoindent
-set smartindent
-set tabstop=4
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 

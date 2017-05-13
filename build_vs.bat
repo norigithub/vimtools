@@ -1,5 +1,5 @@
-call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
-SET Include=%Include%;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include
+call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
+SET Include=%Include%;C:\Program Files\Microsoft SDKs\Windows\v7.1\Include
 
 
 ::Define variables.

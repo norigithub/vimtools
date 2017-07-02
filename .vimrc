@@ -78,10 +78,10 @@ noremap <silent> <ESC><ESC> :noh<CR>
 
 
 "Run script on python2
-noremap <F2> :!python %<CR>"
+noremap <F2> :pyfile %<CR>"
 
 "Run script on python3
-noremap <F3> :!python3 %<CR>"
+noremap <F3> :py3file %<CR>"
 
 "Toggle NERDTree
 noremap <F4> :NERDTreeToggle<CR>"

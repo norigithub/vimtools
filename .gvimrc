@@ -24,6 +24,9 @@ source $VIMRUNTIME/menu.vim
 "英語メッセージにする
 language C
 
+"emoji
+set rop=type:directx,renmode:5
+
 " 縦幅　デフォルトは24
 set lines=40
 " 横幅　デフォルトは80

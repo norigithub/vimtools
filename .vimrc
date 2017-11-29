@@ -65,6 +65,8 @@ set viminfo+=h
 "読み込み時のエンコード順番
 set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp
 
+set encoding=utf-8
+
 "タブをスペース4に変換
 set expandtab
 set smarttab

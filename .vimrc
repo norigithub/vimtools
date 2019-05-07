@@ -111,3 +111,12 @@ if !(has("win32") || has("win64"))
     call SetStyle()
     call SetIndentGuide()
 endif
+
+"Auto Complete
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O

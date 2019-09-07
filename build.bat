@@ -1,5 +1,4 @@
-call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
-SET Include=%Include%;C:\Program Files\Microsoft SDKs\Windows\v7.1\Include
+call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
 
 
 ::Define variables.
@@ -11,9 +10,12 @@ set GIME=yes
 set ICONV=yes
 set CSCOPE=yes
 set DEBUG=no
-set PYTHON3=C:\Users\Nori\AppData\Local\Programs\Python\Python36
+::set PYTHON=C:\Users\Nori\AppData\Local\Programs\Python\Python27
+::set DYNAMIC_PYTHON=yes
+::set PYTHON_VER=27
+set PYTHON3=C:\Users\Nori\AppData\Local\Programs\Python\Python37
 set DYNAMIC_PYTHON3=yes
-set PYTHON3_VER=36
+set PYTHON3_VER=37
 set FEATURES=HUGE
 set TERMINAL=yes
 set DIRECTX=yes

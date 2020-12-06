@@ -77,12 +77,13 @@ set autoindent
 ":nohにESC*2割り当て
 noremap <silent> <ESC><ESC> :noh<CR>
 
-
-"Run script on python2
-noremap <F2> :pyfile %<CR>"
-
-"Run script on python3
-noremap <F3> :py3file %<CR>"
+"Run Python
+if has("win32") || has("win64")
+    set pythonthreedll=C:\Users\Nori\AppData\Local\Programs\Python\Python38\python38.dll
+    noremap <F5> :term python %<CR>"
+else
+    noremap <F5> :term python3 %<CR>"
+endif
 
 "Toggle NERDTree
 noremap <F4> :NERDTreeToggle<CR>"
@@ -110,5 +111,3 @@ if !(has("win32") || has("win64"))
     call SetStyle()
     call SetIndentGuide()
 endif
-
-"repo test

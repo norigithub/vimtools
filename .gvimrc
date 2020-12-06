@@ -6,12 +6,6 @@ call SetStyle()
 call SetIndentGuide()
 IndentGuidesToggle
 
-"Run script on python2
-noremap <F2> :!python %<CR>"
-
-"Run script on python3
-noremap <F3> :!python3 %<CR>"
-
 "IME制御
 set iminsert=0
 set imsearch=-1
@@ -31,3 +25,4 @@ set rop=type:directx,renmode:5
 set lines=40
 " 横幅　デフォルトは80
 set columns=120
+

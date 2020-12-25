@@ -1,3 +1,5 @@
+#dnf install dnf-plugins-core  # install this to use 'dnf builddep'
+#dnf builddep python3
 dnf install\
             bzip2-devel\
             expat-devel\

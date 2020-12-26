@@ -80,9 +80,9 @@ noremap <silent> <ESC><ESC> :noh<CR>
 "Run Python
 if has("win32") || has("win64")
     set pythonthreedll=C:\Users\Nori\AppData\Local\Programs\Python\Python38\python38.dll
-    noremap <F5> :term python %<CR>
+    noremap <F5> :below term python %<CR>
 else
-    noremap <F5> :term python3 %<CR>
+    noremap <F5> :below term python3 %<CR>
 endif
 
 "Toggle NERDTree
@@ -111,3 +111,5 @@ if !(has("win32") || has("win64"))
     call SetStyle()
     call SetIndentGuide()
 endif
+
+tnoremap <RightMouse> <C-W>"+

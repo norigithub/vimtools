@@ -1,4 +1,5 @@
-set guifont=Ricty_Diminished:h14
+set guifont=Cica:h14
+set guifont=HackGenNerd:h14
 
 set encoding=utf-8
 
@@ -25,4 +26,3 @@ set rop=type:directx,renmode:5
 set lines=40
 " 横幅　デフォルトは80
 set columns=120
-

@@ -16,9 +16,9 @@ endif
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'preservim/vim-indent-guides'
+Plugin 'preservim/nerdtree'
+Plugin 'preservim/nerdcommenter'
 Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
